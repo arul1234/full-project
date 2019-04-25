@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title text-center>
+      Chart 
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <table width="100%" class="chart">
+          <tr>
+            <th>Date</th>
+            <th>S.No</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+          
+        <tr *ngFor="let item of items | async">
+            <td>{{item.date}}</td>
+            <td>{{item.sno}}</td>
+            <td>{{item.one}}</td>
+            <td>{{item.two}}</td>
+            <td>{{item.three}}</td>
+            <td>{{item.four}}</td>
+            <td>{{item.five}}</td>
+            <td>{{item.six}}</td>
+        </tr>
+  </table>
+ 
+</ion-content>

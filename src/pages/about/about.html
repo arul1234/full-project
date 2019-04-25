@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title text-center>
+      Today Guessing
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+<div *ngFor="let item of items | async">
+    <h1>{{item.no}}</h1>
+</div>
+
+</ion-content>
+  
